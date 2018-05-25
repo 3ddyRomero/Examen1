@@ -7,9 +7,9 @@ void llenartablero(){
    for(int i=0;i<SIZE;i++){
        for(int j=0;j<SIZE;j++){
 	   if(i<3 && ((i+j)%2==0)
-		matrix[i][j] = "B";
+		matrix[i][j] = " B ";
     	   else if((i > 4) && ((i + j) % 2 == 0))
-		    matrix[i][j] = 'N';
+		    matrix[i][j] = " ";
 	   else
 		matrix[i][j] = ' ';
        }
@@ -18,8 +18,12 @@ void llenartablero(){
 
 void imprimirtablero(){
    for(int i=0;i<SIZE;i++){
-	
-   
+	if(i = 0){
+	   cout<<" ";
+	   for(int j=0; j<SIZE;j++){
+	       cout<<i;
+	   }
+        }	
    }
 }
 
