@@ -3,6 +3,9 @@
 
 using namespace std;
 
+char charb = 'B';
+char charn = 'N';
+
 void llenartablero(){
    for(int i=0;i<SIZE;i++){
        for(int j=0;j<SIZE;j++){
@@ -21,11 +24,21 @@ void imprimirtablero(){
 	if(i = 0){
 	   cout<<" ";
 	   for(int j=0; j<SIZE;j++){
-	       cout<<i;
+	       cout<<j;
 	   }
         }	
    }
 }
+
+int mover(int x,int y){
+   cout<<"Empieza blancas."<<endl;
+   if(){
+   
+   }
+   
+}
+
+
 
 int main(){
    //int Tabla** matrix = new Tabla[8][8];
@@ -35,6 +48,6 @@ int main(){
    
    
    
-   
+   delete matrix;
    return 0;
 }
