@@ -4,21 +4,17 @@
 #define SIZE 8
 #define MAXHISTORY 64
 
-class char damasclase(){
+class damasclase{
 	private:
-	    char** areajuego;
-	    char*** historialjuego;
-	    int historialesguardados;
-	    char** createcharMatrix();
-            void printMatrix(char**);;
-	    
+            char letra;
+	    char matrix[SIZE][SIZE]; 
 
 	public:
 	    damasclase();//constructor vacio
-	    void createstructures//instanciar Matrices
+	    void createstructures();//instanciar Matrices
 	    
-	    void piezaB();
-	    void piezaN();
+	    void piezaB(char);
+	    void piezaN(char);
 	    void validacion(int,int);//validar Movimiento
 
 	    ~damasclase();//destructor
